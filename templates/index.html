@@ -1,0 +1,33 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<head>
+<title>Homepage</title>
+</head>
+
+<a href="{{url_for('home')}}"><img src="{{ url_for('static', filename='header.png')}}" width="300" height="100" alt='homepage'/></a>
+
+<body class="oneColLiqCtrHdr">
+<div id="container">
+  <div id="header">
+    <!-- end #header --></div>
+  <div id="mainContent">
+    <p>&nbsp;</p>
+    <p><b>Welcome! Click an icon to Add Services, Delete Services, Services, View Available Services.</p>
+    <table width="840" height="227" border="0">
+      <tr>
+        <td width="184"><a href="{{url_for('additem')}}"><img src="{{ url_for('static', filename='additem.png')}}" width="146" height="197" alt='additem' /></a></td>
+        <td width="223"><a href="{{url_for('deleteitem')}}"><img src="{{ url_for('static', filename='deleteitem.png')}}" width="146" height="197" alt='deleteitem' /></td>
+        <td width="214"><a href="{{url_for('buyitem')}}"><img src="{{ url_for('static', filename='buyitem.png')}}" width="146" height="197" alt='buyitem' /></td>
+        <td width="201"><a href="{{url_for('viewinventory')}}"><img src="{{ url_for('static', filename='viewinventory.png')}}" width="146" height="197" alt='viewinventory' /></td>
+      </tr>
+    </table>
+    <p>
+      <!-- end #mainContent -->
+    </p>
+  </div>
+  <div id="footer">
+    <p><img src="{{ url_for('static', filename='logo.png')}}" width="300" height="100" alt='logo' </p>
+  <!-- end #footer --></div>
+<!-- end #container --></div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>View Services</title>
+</head>
+
+<body class="oneColLiqCtrHdr">
+
+<div id="container">
+  <div id="header">
+        <a href="{{url_for('home')}}"><img src="{{ url_for('static', filename='header.png')}}" width="300" height="100" alt='homepage'/></a>
+    <!-- end #header --></div>
+  <div id="mainContent">
+    <p>&nbsp;</p>
+    <p class="style1"><b> Available Services</p>
+    <br />
+  <table border="1">
+       <tr bgcolor="grey">
+          <td><font color="white"><div align="center"><strong>Name&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</strong></div></td>
+          <td><font color="white"><div align="center"><strong>Price&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</strong></div></td>
+        </tr>
+      {% for row in rows %}
+ 
+      <tr>
+        <td>{{ row['Services'] }}</td>
+        <td align="right"> $ {{ row['Price'] }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>
+      <!-- end #mainContent -->
+    </p>
+  </div>
+  
+  <div id="footer">
+    <p><img src="{{ url_for('static', filename='logo.png')}}" width="300" height="100" alt='logo' </p>
+  <!-- end #footer --></div>
+<!-- end #container --></div>
+</body>
+</html>

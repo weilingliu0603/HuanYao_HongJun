@@ -1,0 +1,33 @@
+<head>
+<title>Add Service</title>
+</head>
+
+<body class="oneColLiqCtrHdr">
+
+<div id="container">
+  <div id="header">
+     <a href="{{url_for('home')}}"><img src="{{ url_for('static', filename='header.png')}}" width="300" height="100" alt='homepage'/></a>
+    <!-- end #header --></div>
+  <div id="mainContent">
+    <p>&nbsp;</p>
+
+    <p><strong>Add a new service to the type of services</strong></p>
+
+ <form action="{{ url_for('added') }}" method="POST">
+
+    Name&ensp;&ensp; <input name = 'name' value = "Enter name of service">
+<br><br>
+  Price&ensp;&ensp;&ensp;&ensp;<input name = 'price' value = "Enter price of service">
+<br><br>
+    <input type="submit" value = "submit">
+    </form>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+  </div>
+  
+  <div id="footer">
+    <p><img src="{{ url_for('static', filename='logo.png')}}" width="300" height="100" alt='logo' </p>
+  <!-- end #footer --></div>
+<!-- end #container --></div>
+</body>
+</html>
